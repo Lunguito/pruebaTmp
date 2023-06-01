@@ -1,0 +1,31 @@
+<script setup>
+import {ref} from 'vue';
+var count = ref(0)
+
+function increment(){
+    count.value++
+}
+function decrement(){
+    count.value--
+}
+
+</script>
+
+<h1>¡Hola mundo!</h1>
+<h3>Count is {{ count }}</h3>
+<div>
+    <button @click="increment">incrementar</button>
+    <button @click="decrement">decrementar</button>
+</div>
+
+<style>
+    h1{
+        color: red;
+        position: fixed;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-style: italic;
+    }
+    div{
+        position:relative;
+    }
+</style>
